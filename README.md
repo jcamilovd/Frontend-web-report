@@ -56,10 +56,18 @@ Verificar su instalacion : tsc -version
 
 - Instalacion Angular
 
-Comando para instalar Angular :  npm install -g angular-cli
+Comando para instalar Angular en la terminal:  npm install -g angular-cli
 
- 
+![image](https://user-images.githubusercontent.com/70036764/163657134-6ef58ba3-6c5e-4be8-9fdf-284eae8006bb.png)
 
+Verificar su intalacion con:  ng version
+
+![image](https://user-images.githubusercontent.com/70036764/163657166-33abdae1-da7b-4dfc-80f2-a5b63fdfb341.png)
+
+# Depliege del Frontend en Visual Studio Code
+
+- Bajar el repositorio a tu maquina   :   git clone _DireccionDelRepositorio____
+- Por ultimo debe abre el VisualStudio Code con el proyect y revisar que la consola este ubicada en la carpeta del proyecto,  escribe el comando:  NG SERVE  para ejecutar el despliege de Angular.
 
 
 
