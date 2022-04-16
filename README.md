@@ -24,7 +24,7 @@ Una vez instalado para verificar su funcionamiento abres simbolo del sistema, es
 
 - El otro requerimiento es Visual Studio Code(Lo recomiento) o otro Ide de su preferencia, procedemos a instalarlo
 
-En la pagina oficial de Visual Studio Code lo podeis descargar  https://code.visualstudio.com/
+En la pagina oficial de Visual Studio Code lo podeis descargar  https://code.visualstudio.com/  (Detecta automaticamente que sistema operativo posees)
 ![image](https://user-images.githubusercontent.com/70036764/163635040-13a18554-da5f-4df6-ac16-ac08d44db0f6.png)
 
 Te redifige a una pagina donde esta la documentacion de VSCode y empieza la descarga del archivo .exe
@@ -38,6 +38,29 @@ Se procede a la instalacion
 Una vez terminado la instalacion todo esta listo.
 
 # Instalacion angular
+
+Pagina oficial de Angula: https://angular.io/
+
+Prerequisito 
+- Instalar TypeScript  https://www.typescriptlang.org/
+
+TypeScript solo en el proyecto :  npm install typescript --save-dev  en tu terminal
+
+TypeScript de forma global : npm install -g typescript  (RECOMENDADO para tener en tu computador)
+![image](https://user-images.githubusercontent.com/70036764/163656107-3f3dc2e1-8002-42dd-94a3-f648394acdf2.png)
+
+Verificar su instalacion : tsc -version
+ 
+![image](https://user-images.githubusercontent.com/70036764/163656170-bc3bf76e-62d4-4963-a3ba-31dd8c2b08a8.png)
+
+
+- Instalacion Angular
+
+Comando para instalar Angular :  npm install -g angular-cli
+
+ 
+
+
 
 
 
