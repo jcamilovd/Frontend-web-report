@@ -15,3 +15,30 @@ Una vez descargado el archivo, se ejecuta y se procede la instalacion
 ![image](https://user-images.githubusercontent.com/70036764/163632125-711ad9e5-89ee-4a11-902e-8a5aae9b8c69.png)
 ![image](https://user-images.githubusercontent.com/70036764/163632179-74ff76a9-a6ea-4a79-84d9-01fe249f1ce6.png)
 ![image](https://user-images.githubusercontent.com/70036764/163632277-2d9babee-d361-4776-884f-43b00da24925.png)
+![image](https://user-images.githubusercontent.com/70036764/163634397-c41a7c76-eaa5-4c6f-8d90-bfdcb5e94da5.png)
+![image](https://user-images.githubusercontent.com/70036764/163634424-1a7f81f7-d8ca-4f9d-8cec-f788e33aff8e.png)
+
+Una vez instalado para verificar su funcionamiento abres simbolo del sistema, escribe:   node --version
+
+![image](https://user-images.githubusercontent.com/70036764/163634699-2a7c61ab-34d6-444b-909d-60bbd1d8d747.png)
+
+- El otro requerimiento es Visual Studio Code(Lo recomiento) o otro Ide de su preferencia, procedemos a instalarlo
+
+En la pagina oficial de Visual Studio Code lo podeis descargar  https://code.visualstudio.com/
+![image](https://user-images.githubusercontent.com/70036764/163635040-13a18554-da5f-4df6-ac16-ac08d44db0f6.png)
+
+Te redifige a una pagina donde esta la documentacion de VSCode y empieza la descarga del archivo .exe
+
+![image](https://user-images.githubusercontent.com/70036764/163635647-56ef37c0-fdcc-47b3-a4a8-89d7a2ae2a4b.png)
+
+Se procede a la instalacion 
+
+![image](https://user-images.githubusercontent.com/70036764/163636028-f857c152-312c-438a-9f30-553a034ec649.png)![image](https://user-images.githubusercontent.com/70036764/163636078-a350d1f7-f235-4df2-9abd-8076ea3df1c7.png)![image](https://user-images.githubusercontent.com/70036764/163654929-50278186-7ba3-41d0-879e-66e65adc2a8d.png)![image](https://user-images.githubusercontent.com/70036764/163655560-5fbca816-887d-4222-958d-c63ef934810c.png)
+
+Una vez terminado la instalacion todo esta listo.
+
+# Instalacion angular
+
+
+
+
