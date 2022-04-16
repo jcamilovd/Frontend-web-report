@@ -1,0 +1,41 @@
+.registerCard{
+    min-height: 69vh;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.elementsCard{
+   text-align:  center;
+}
+
+.example-full-width{
+    width: 80%;
+}
+
+.buttonsRegister{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.buttonsRegister .btn{
+    width: 100%;
+    color: #4974a5;
+    border-color: #00000036;
+}
+
+.buttonsRegister .spinner-border{
+    animation-duration: 0.75s;
+}
+
+.alert-danger{
+    color: #721c24;
+    background: #f8d7da;
+    border-color: #f5c6cb;
+    width: 80%;
+    margin: 5px auto;
+}
+
+.container-error-message{
+    padding: 2px; 
+    text-align: start;
+}

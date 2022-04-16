@@ -1,0 +1,57 @@
+.content {
+  min-height: 79vh;
+  background-color: #f5f5f5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.upgradeCard {
+  min-height: 69vh;
+  width: 50%;
+  margin: 0px auto;
+}
+
+input:disabled {
+  color: black;
+  background-color: #f5f5f5;
+}
+
+.buttonsUpdate {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.buttonsUpdate .btn {
+  width: 100%;
+  color: #4974a5;
+  border-color: #00000036;
+}
+
+.buttonsUpdate .buttonUpdate .btn{
+  border: 1px solid #3f51b5;
+}
+
+.buttonsUpdate .buttonUpdate,
+.buttonsUpdate .buttonCancel {
+  width: 40%;
+}
+
+.elementsCard {
+  text-align: center;
+}
+
+.example-full-width {
+  width: 80%;
+}
+
+.buttonsEdit .btn {
+  width: 80%;
+  color: #4974a5;
+  border-color: #00000036;
+}
+
+.buttonsRegister .spinner-border {
+  animation-duration: 0.75s;
+}

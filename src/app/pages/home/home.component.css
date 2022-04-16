@@ -1,0 +1,139 @@
+* {
+  box-sizing: content-box;
+}
+
+.content {
+  min-height: 69vh;
+  padding-top: 60px;
+  background-color: #F5F5F5;
+}
+
+.content .contentTitle {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+.content .contentTitle h1 {
+  display: inline-block;
+  font-size: 60px;
+  margin: 0;
+  text-shadow: 1px 1px 5px #5f6368;
+}
+
+.content .contentInput {
+  width: 580px;
+  max-width: 560px;
+  height: 44px;
+  margin: 0 auto;
+  border-radius: 100px;
+  border: 1px solid #5f6368;
+  display: flex;
+  align-items: center;
+}
+
+.content .contentInput input {
+  width: 100%;
+  max-width: 473px;
+  height: 34px;
+  border: none;
+  font-size: 18px;
+  outline: none;
+  background-color: #F5F5F5;
+}
+
+.content .contentInput:hover {
+  box-shadow: 0 1px 6px #5f6368;
+}
+
+.content .contentInput mat-icon {
+  padding: 0 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.content .warning {
+  text-align: center;
+  color: #f33;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.content .warning span{
+    display: block;
+}
+
+.content .contentButtons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20%;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.content .contentButtons .btn {
+  width: 220px;
+  color: #4974a5;
+  border-color: #00000036;
+}
+
+/** Images */
+
+img {
+  width: 100%;
+}
+.contentImgs {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.contentImgs .contentImg {
+  width: 50%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(67px, 1fr));
+  grid-gap: 50px;
+}
+
+.contentImgs .imgLost {
+  padding-right: 5%;
+  border-right: 1px #5f636880 solid;
+}
+
+.contentImgs .imgFound {
+  padding-left: 5%;
+}
+
+/** Card */
+
+.contentCard{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 10%;
+  flex-wrap: wrap;
+}
+
+.documentCard {
+  max-width: 400px;
+  margin-bottom: 50px;
+}
+
+.documentCard .documentCardHeader{
+    margin: 0;
+}
+
+.documentCard img {
+  width: 100%;
+  max-height: 250px;
+  margin-bottom: 10px;
+}
+
+.documentCard mat-card-content h4{
+    margin-bottom: 0;
+    font-weight: bold;
+}

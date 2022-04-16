@@ -1,0 +1,51 @@
+.elementsCard {
+  text-align: center;
+}
+
+.dialog-content {
+  width: 450px;
+}
+
+.example-full-width {
+  width: 80%;
+}
+
+img {
+  width: 120px;
+}
+
+.buttonsLogin {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.buttonsLogin .btn {
+  width: 100%;
+  color: #4974a5;
+  border-color: #00000036;
+}
+
+.buttonsLogin .buttonEnter .btnEnterLogin {
+  border: 1px solid #3f51b5;
+}
+
+.buttonsLogin .buttonEnter,
+.buttonsLogin .buttonCancel {
+  width: 40%;
+}
+
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+  border-color: #f5c6cb;
+  width: 80%;
+  margin: 15px auto;
+  margin-top: -10px;
+}
+
+.container-error-message {
+  padding: 2px;
+  text-align: start;
+}

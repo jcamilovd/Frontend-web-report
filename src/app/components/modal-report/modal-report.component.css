@@ -1,0 +1,73 @@
+.elementsformCard {
+  text-align: center;
+  width: 100%;
+}
+.formCard {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.forms-repeat p {
+  margin: 0;
+}
+
+.example-full-width {
+  width: 90%;
+}
+
+.example-margin {
+  margin: 2px;
+}
+
+.buttonsModify {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonsModify .buttonModify .btn {
+  border: 1px solid #3f51b5;
+}
+
+.buttonsModify .buttonModify, .buttonsModify .buttonCancel{
+  width: 40%;
+}
+
+.buttonsModify .btn {
+  width: 100%;
+  color: #4974a5;
+  border-color: #00000036;
+  margin: 0 auto;
+}
+
+.buttonsModify .spinner-border {
+  animation-duration: 0.75s;
+}
+
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+  border-color: #f5c6cb;
+  width: 90%;
+  margin: 15px auto;
+  margin-top: -10px;
+}
+
+.container-error-message {
+  padding: 2px;
+  text-align: start;
+}
+
+/* Image */
+#fichero {
+  display: none;
+}
+
+#fichero2 {
+  display: none;
+}
+
+.dialog-content {
+  width: 600px;
+}

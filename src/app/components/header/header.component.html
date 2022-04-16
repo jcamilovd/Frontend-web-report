@@ -1,0 +1,32 @@
+<mat-toolbar class="header" color='primary'>
+</mat-toolbar>
+<mat-toolbar class="header fixed-top" color='primary'>
+    <span class="logo" (click)="showHome()"><img src="../../../assets/images/logo.png"> <span class="namePage"> Reporte de Documentos</span></span>
+    <div class="headerButtons" *ngIf="!login">
+        <button mat-button (click)="showReportLost()" *ngIf="!boton1">Perdí mi documento</button>
+        <button mat-button (click)="showReportLost()" class="btn btn-primary" *ngIf="boton1">Perdí mi documento</button>
+        <button mat-button (click)="showReportFound()" *ngIf="!boton2">Encontre un documento</button>
+        <button mat-button (click)="showReportFound()" class="btn btn-primary" *ngIf="boton2">Encontre un documento</button>
+        <button mat-button (click)="showLogin()" *ngIf="!boton3">Acceder/Registrar</button>
+        <button mat-button (click)="showLogin()" class="btn btn-primary" *ngIf="boton3">Acceder/Registrar</button>
+    </div>
+    <div class="headerButtons" *ngIf="login">
+        <button mat-button [matMenuTriggerFor]="lost">Documentos perdidos <mat-icon>arrow_drop_down</mat-icon></button>
+        <mat-menu #lost="matMenu">
+            <button mat-menu-item (click)="showMyDocumentsLost()"><mat-icon>find_in_page</mat-icon>Mis reportes</button>
+            <button mat-menu-item (click)="showDocumentsLost()"><mat-icon>search</mat-icon>Consultar todos</button>
+            <button mat-menu-item (click)="showReportLost()"><mat-icon>unarchive</mat-icon>Reportar documento</button>   
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="found">Documentos encontrados <mat-icon>arrow_drop_down</mat-icon></button>
+        <mat-menu #found="matMenu">
+            <button mat-menu-item (click)="showMyDocumentsFound()"><mat-icon>find_in_page</mat-icon>Mis reportes</button>
+            <button mat-menu-item (click)="showDocumentsFound()"><mat-icon>search</mat-icon>Consultar todos</button>
+            <button mat-menu-item (click)="showReportFound()"><mat-icon>unarchive</mat-icon>Reportar documento</button>           
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="user"><mat-icon>account_circle</mat-icon> Usuario</button>
+        <mat-menu #user="matMenu">
+            <button mat-menu-item (click)="showUpdateData()"><mat-icon>face</mat-icon> Perfil</button>
+            <button mat-menu-item (click)="showSignOff()"><mat-icon>exit_to_app</mat-icon> Cerrar sesión</button>
+        </mat-menu>
+    </div>
+</mat-toolbar>

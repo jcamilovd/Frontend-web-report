@@ -1,0 +1,76 @@
+.elementsformCard {
+  text-align: center;
+}
+.formCard {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.forms-repeat p {
+  margin: 0;
+}
+
+.example-full-width {
+  width: 80%;
+}
+
+.example-margin {
+  margin: 2px;
+}
+
+.images-form {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.images-form p {
+  width: 35%;
+  text-align: left;
+}
+
+
+#fileImage{
+  display: none;
+}
+
+.images-form .buttonImg{
+  width: 60%;
+}
+
+.images-form .buttonImg button, .images-form .buttonImg label{
+  width: 100%;
+  cursor: pointer;
+}
+
+.preview{
+ margin-top: 10px;
+}
+
+.buttonsReport .btn {
+  width: 80%;
+  color: #4974a5;
+  border-color: #00000036;
+  margin: 0 auto;
+}
+
+.buttonsReport .spinner-border {
+  animation-duration: 0.75s;
+}
+
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+  border-color: #f5c6cb;
+  width: 80%;
+  margin: 15px auto;
+  margin-top: -10px;
+}
+
+.container-error-message {
+  padding: 2px;
+  text-align: start;
+}
