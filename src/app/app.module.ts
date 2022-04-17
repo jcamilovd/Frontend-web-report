@@ -21,6 +21,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ActivationComponent } from './pages/activation/activation.component';
 import { UpdateDataComponent } from './pages/update-data/update-data.component';
 import { ModalReportComponent } from './components/modal-report/modal-report.component';
+import { RegisterShopComponent } from './pages/register-shop/register-shop.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ModalReportComponent } from './components/modal-report/modal-report.com
     LoginComponent,
     ActivationComponent,
     UpdateDataComponent,
-    ModalReportComponent
+    ModalReportComponent,
+    RegisterShopComponent
   ],
   imports: [
     BrowserModule,
