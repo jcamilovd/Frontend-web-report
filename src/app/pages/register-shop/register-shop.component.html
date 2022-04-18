@@ -1,1 +1,112 @@
-<p>register-shop works!</p>
+<mat-card class="registerCard">
+    <div class="elementsCard">
+        <div class="containerRegisterTitle">
+            <h1>Registrarse</h1>
+        </div>
+        <form [formGroup]="form" class="registerForm" (ngSubmit)="onSubmit()">
+            <div class="inputsRegister">
+
+                <div>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>NIT</mat-label>
+                        <input matInput placeholder="Ingresar cedula" type="number"
+                            formControlName="identificationNumber">
+                    </mat-form-field>
+                    <div class="alert-danger"
+                        *ngIf="form.get('identificationNumber')?.errors && (form.get('identificationNumber')?.dirty || form.get('identificationNumber')?.touched)">
+                        <div class="container-error-message"
+                            *ngIf="form.get('identificationNumber')?.hasError('required')">
+                            El campo NIT es requerido
+                        </div>
+                        <div class="container-error-message" *ngIf="form.get('identificationNumber')?.hasError('min')">
+                            El campo NIT debe contener mínimo 8 caracteres
+                        </div>
+                        <div class="container-error-message" *ngIf="form.get('identificationNumber')?.hasError('max')">
+                            El campo NIT debe contener máximo 10 caracteres
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Nombre completo</mat-label>
+                        <input matInput placeholder="Ingresar nombre completo" type="text" formControlName="fullName">
+                    </mat-form-field>
+                    <div class="alert-danger"
+                        *ngIf="form.get('fullName')?.errors && (form.get('fullName')?.dirty || form.get('fullName')?.touched)">
+                        <div class="container-error-message" *ngIf="form.get('fullName')?.hasError('required')">
+                            El campo nombre es requerido
+                        </div>
+                        <div class="container-error-message" *ngIf="form.get('fullName')?.hasError('minlength')">
+                            El campo nombre debe contener al menos un caracter
+                        </div>
+                        <div class="container-error-message" *ngIf="form.get('fullName')?.hasError('maxlength')">
+                            El campo nombre debe contener máximo 100 caracteres
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="Ingresar email" type="email" formControlName="email">
+                    </mat-form-field>
+                    <div class="alert-danger"
+                        *ngIf="form.get('email')?.errors && (form.get('email')?.dirty || form.get('email')?.touched)">
+                        <div class="container-error-message" *ngIf="form.get('email')?.hasError('required')">
+                            El campo email es requerido
+                        </div>
+                        <div class="container-error-message" *ngIf="form.get('email')?.hasError('email')">
+                            El campo debe ser de tipo email (Ej:nombre@gmail.com)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'" placeholder="Ingresar contraseña" formControlName="password">
+                        <button type="button" mat-icon-button matSuffix (click)="hide = !hide">
+                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                    <div class="alert-danger"
+                        *ngIf="form.get('password')?.errors && (form.get('password')?.dirty || form.get('password')?.touched)">
+                        <div class="container-error-message" *ngIf="form.get('password')?.hasError('required')">
+                            El campo contraseña es requerido
+                        </div>
+                        <div class="container-error-message" *ngIf="form.get('password')?.hasError('minlength')">
+                            El campo contraseña debe contener mínimo 8 caracteres
+                        </div>
+                        <div class="container-error-message" *ngIf="form.get('password')?.hasError('maxlength')">
+                            El campo contraseña debe contener máximo 15 caracteres
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Ciudad</mat-label>
+                        <mat-select formControlName="cityCode">
+                            <mat-option *ngFor="let city of cities" [value]="city.code">
+                                {{city.name}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <div class="alert-danger"
+                        *ngIf="form.get('cityCode')?.errors && (form.get('cityCode')?.dirty || form.get('cityCode')?.touched)">
+                        <div class="container-error-message" *ngIf="form.get('cityCode')?.hasError('required')">
+                            El campo ciudad es requerido
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonsRegister">
+                <button *ngIf="!spinner" class="btn" mat-stroked-button type="submit"
+                    [disabled]="!form.valid">Registrarse</button>
+
+                <button *ngIf="spinner" class="btn" mat-stroked-button>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <span class="sr-only"> Registrando...</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</mat-card>

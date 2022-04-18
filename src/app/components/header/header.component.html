@@ -9,6 +9,9 @@
         <button mat-button (click)="showReportFound()" class="btn btn-primary" *ngIf="boton2">Encontre un documento</button>
         <button mat-button (click)="showLogin()" *ngIf="!boton3">Acceder/Registrar</button>
         <button mat-button (click)="showLogin()" class="btn btn-primary" *ngIf="boton3">Acceder/Registrar</button>
+        <button mat-button (click)="showLogin()" *ngIf="!boton3">Acceder Tiendas</button>
+        <button mat-button (click)="showLogin()" class="btn btn-primary" *ngIf="boton3">Acceder Tiendas</button>
+        
     </div>
     <div class="headerButtons" *ngIf="login">
         <button mat-button [matMenuTriggerFor]="lost">Documentos perdidos <mat-icon>arrow_drop_down</mat-icon></button>
@@ -26,6 +29,7 @@
         <button mat-button [matMenuTriggerFor]="user"><mat-icon>account_circle</mat-icon> Usuario</button>
         <mat-menu #user="matMenu">
             <button mat-menu-item (click)="showUpdateData()"><mat-icon>face</mat-icon> Perfil</button>
+            <button mat-menu-item (click)="showUpdateData()"><mat-icon>face</mat-icon> Registrar Tiendas</button>
             <button mat-menu-item (click)="showSignOff()"><mat-icon>exit_to_app</mat-icon> Cerrar sesión</button>
         </mat-menu>
     </div>
