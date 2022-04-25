@@ -67,6 +67,7 @@ Verificar su intalacion con:  ng version
 # Depliege del Frontend en Visual Studio Code
 
 - Bajar el repositorio a tu maquina   :   git clone _DireccionDelRepositorio____
+- Escribir en la consola el comando npm instal para instalar todos los paquetes necesarios
 - Por ultimo debe abre el VisualStudio Code con el proyect y revisar que la consola este ubicada en la carpeta del proyecto,  escribe el comando:  NG SERVE  para ejecutar el despliege de Angular.
 
 
